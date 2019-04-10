@@ -1,0 +1,8 @@
+{
+    "name": "xc2-time",
+    "width": 450,
+    "height": 120,
+    "startFile": "index.html",
+    "transparentBg": true,
+    "remoteAccess": true
+}

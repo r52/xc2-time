@@ -1,0 +1,148 @@
+html,
+body {
+    height: 92%;
+}
+
+.container {
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .box {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .location {
+    padding-bottom: 5px;
+    text-align: center;
+    font-style: oblique;
+    font-size: 36px;
+    height: 40px;
+    color: #feffff;
+    text-shadow: 2px 0 0 #1c5874, -2px 0 0 #1c5874, 0 2px 0 #1c5874, 0 -2px 0 #1c5874, 1px 1px #1c5874, -1px -1px 0 #1c5874, 1px -1px 0 #1c5874, -1px 1px 0 #1c5874;
+}
+
+.container .divider {
+    background-image: linear-gradient(to left, white, rgba(65, 105, 255, 1), rgba(65, 105, 255, 0));
+    height: 2px;
+}
+
+.container .weathertime {
+    background-image: linear-gradient(-135deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    flex: 1;
+}
+
+.timegroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* timeicon sprite */
+
+.timeicon {
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/timevec.svg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.timeicon.morning {
+    background-position: 0 0;
+}
+
+.timeicon.day {
+    background-position: 20% 0;
+}
+
+.timeicon.evening {
+    background-position: 40% 0;
+}
+
+.timeicon.night {
+    background-position: 60% 0;
+}
+
+.timeicon.midnight {
+    background-position: 80% 0;
+}
+
+.timeicon.dawn {
+    background-position: 100% 0;
+}
+
+.time {
+    color: rgb(176, 224, 230);
+    text-shadow: 2px 0 0 rgb(30, 144, 255), -2px 0 0 rgb(30, 144, 255), 0 2px 0 rgb(30, 144, 255), 0 -2px 0 rgb(30, 144, 255), 1px 1px rgb(30, 144, 255), -1px -1px 0 rgb(30, 144, 255), 1px -1px 0 rgb(30, 144, 255), -1px 1px 0 rgb(30, 144, 255);
+    font-style: oblique;
+    font-size: 36px;
+}
+
+.blink {
+    animation: blinker 1s infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* weathericon sprite */
+
+.weathericon {
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/weather.svg);
+    background-repeat: no-repeat;
+    background-size: auto 200%;
+}
+
+
+.weathericon.fair {
+    background-position: 0 0;
+}
+
+.weathericon.cloudy {
+    background-position: 14.29% 0;
+}
+
+.weathericon.lightning {
+    background-position: 28.57% 0;
+}
+
+.weathericon.rain {
+    background-position: 42.86% 0;
+}
+
+.weathericon.thunderstorm {
+    background-position: 57.14% 0;
+}
+
+.weathericon.heavystorm {
+    background-position: 71.43% 0;
+}
+
+.weathericon.fog {
+    background-position: 86.5% 0;
+}
+
+.weathericon.snow {
+    background-position: 100% 0;
+}
+
+.weathericon.tornado {
+    background-position: 0 100%;
+}
+
+.weathericon.freezingrain {
+    background-position: 14.29% 100%;
+}
