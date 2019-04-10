@@ -20,8 +20,9 @@ body {
 }
 
 .container .location {
+    padding-right: 25px;
     padding-bottom: 5px;
-    text-align: center;
+    text-align: right;
     font-style: oblique;
     font-size: 36px;
     height: 40px;
@@ -42,7 +43,12 @@ body {
 .timegroup {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
+}
+
+.timegroup div {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* timeicon sprite */
@@ -80,6 +86,7 @@ body {
 }
 
 .time {
+    margin-right: 30px !important;
     color: rgb(176, 224, 230);
     text-shadow: 2px 0 0 rgb(30, 144, 255), -2px 0 0 rgb(30, 144, 255), 0 2px 0 rgb(30, 144, 255), 0 -2px 0 rgb(30, 144, 255), 1px 1px rgb(30, 144, 255), -1px -1px 0 rgb(30, 144, 255), 1px -1px 0 rgb(30, 144, 255), -1px 1px 0 rgb(30, 144, 255);
     font-style: oblique;
