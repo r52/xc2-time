@@ -89,9 +89,14 @@ $(function () {
 
     update_time();
     update_timeicon();
-    update_weather();
 
     setInterval(update_time, 1000);
     setInterval(update_timeicon, 3600000);
-    setInterval(update_weather, 900000);
+
+    if (weatherKey && weatherUrl && weatherCity) {
+        update_weather();
+        setInterval(update_weather, 900000);
+    } else {
+        console.warn("xc2-time: Weather options not set!");
+    }
 });
