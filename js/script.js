@@ -1,6 +1,6 @@
 function update_time() {
     var m = moment();
-    $(".time").html(m.format('HH') + '<span class="blink">:</span>' + m.format('mm'));
+    $('.time').html(m.format('HH:mm'));
 }
 
 function update_timeicon() {
