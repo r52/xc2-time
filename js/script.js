@@ -1,14 +1,13 @@
 function update_time() {
-  var m = moment();
-  $(".time").html(m.format("HH:mm"));
+  $(".time").html(dayjs().format("HH:mm"));
 }
 
 function update_timeicon() {
   $(".timeicon").removeClass("morning day evening night midnight dawn");
 
-  var m = moment();
-  var hour = m.hour();
-  var tod = "morning";
+  const m = dayjs();
+  const hour = m.hour();
+  let tod = "morning";
 
   if (hour < 5) {
     tod = "midnight";
